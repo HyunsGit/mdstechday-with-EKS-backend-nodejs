@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ecsdemo-nodejs
+  name: mdstechday-backend-nodejs
+  namespace: backend
 spec:
   selector:
-    app: ecsdemo-nodejs
+    app: mdstechday-backend-nodejs
   ports:
    -  protocol: TCP
       port: 80
